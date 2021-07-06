@@ -12,13 +12,15 @@ function wordPlay() {
         } else {
         word = 'a' + word;
         }
+        if (x = seconds){
+            console.log word;
     }
     var wordGame = 'I hope you have ' + word + weekDays[day] + '!';
     document.getElementById('wordplay').innerHTML = wordGame;
 }
 
 wordPlay();
-setInterval(wordPlay, 1000);
+setInterval(wordPlay, 6000);
 
 
 var form = document.getElementById("contact");
